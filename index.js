@@ -1,12 +1,13 @@
-const alfabeto = ["TE AMO","NO IMAGINAS CUANTO","MI BEBESITO","NO MOLESTES"];
+const alfabeto = ["TE AMO","NO IMAGINAS CUANTO","MI BEBESITO","NO MOLESTES","EL ANILLO PA' CUANDO"];
 const inputOriginal = document.getElementById('input-original');
 const cifrador = document.getElementById('cifrador');
 const resultado = document.getElementById('resultado');
 const rango = document.getElementById('rango');
 
 const shifMessage = () => {
-    const wordArray = [...inputOriginal.value.toUpperCase()];
-    printChar(0, wordArray);
+    const wordArray = inputOriginal.value.toUpperCase();
+    alert(wordArray +"Eres mi persona favorita")
+    // printChar(0, wordArray);
 }
 
 const printChar = (currentLetterIndex, wordArray) => {
