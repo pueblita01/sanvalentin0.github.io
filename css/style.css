@@ -1,13 +1,7 @@
-/*
 
-Template 2075 Digital Team
-
-http://www.tooplate.com/view/2075-digital-team
-
-*/
 
 body {
-    background: #ffffff;
+    background: #fad1fa;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     position: relative;
@@ -51,7 +45,7 @@ hr {
 }
 
 .section-title strong {
-	color: #00C6D7;
+	color: #d70000;
   	font-size: 56px;
 }
 
@@ -71,6 +65,48 @@ hr {
 #portfolio, #pricing, #contact {
    padding-top: 100px;
   padding-bottom: 100px;
+}
+
+.love {
+  width: 50px;
+  height: 50px;
+  transform: rotate(45deg);
+  background: red;
+  position: relative;
+  top: 10rem;
+  left: 10rem;
+  animation: beating 2s ease infinite;
+}
+
+.love:before,
+.love:after {
+  content: "";
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: red;
+  position: absolute;
+}
+
+.love:before {
+  top: 0;
+  left: -25px;
+}
+
+.love:after {
+  top: -25px;
+}
+
+@keyframes beating {
+  0% {
+  	transform: rotate(45deg) scale(1);
+  }
+  50% {
+    transform: rotate(45deg) scale(2);
+  }
+  100% {
+  	transform: rotate(45deg) scale(1);
+  }
 }
 
 
@@ -211,16 +247,16 @@ preloader section
 navigation section
 ========================================================================== */
 .custom-navbar {
-    background: #4B4B4B;
+    background: #eca5cc;
     margin-bottom: 0;
 }
 .custom-navbar .navbar-brand  {
-  color: #00c6d7;
+  color: #d7000b;
   font-weight: 600;
   font-size: 24px;
 }
 .custom-navbar .navbar-brand .navbar-toggle {
-    background: #00c6d7;
+    background: #d70024;
     padding: 4px 6px;
     font-size: 16px;
     color: #fff;
@@ -240,14 +276,14 @@ navigation section
   outline: none;
 }
 .custom-navbar .nav li.active > a {
-      color: #00c6d7;
+      color: #d7001d;
     }
 .custom-navbar .navbar-toggle {
         border: none;
         padding-top: 10px;
     }
 .custom-navbar .navbar-toggle .icon-bar {
-        background: #00c6d7;
+        background: #d7001d;
         border-color: transparent;
     }
 @media(min-width:768px){
@@ -329,7 +365,7 @@ work section
   transition: all 0.4s ease-in-out;
 }
 #work .col-md-4:hover {
-  background-color: #ffffff;
+  background-color: #e60e8c;
   box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.20);
 }
 #work h3 {
@@ -341,12 +377,12 @@ work section
 about section
 ========================================================================== */
 #about {
-  background: #3B3B3B;
+  background: #7a1983;
   color: #ffffff;
 }
 .nav-tabs {
   margin-top: 20px;
-  border-bottom: 1px solid #606060;
+  border-bottom: 1px solid hsl(125, 97%, 64%);
 }
 .nav-tabs > li {
   float: left;
@@ -543,7 +579,7 @@ pricing section
   font-size: 16px;
 }
 #pricing .plan {
-  box-shadow: 0px 2px 8px 0px rgba(50, 50, 50, 0.20);
+  box-shadow: 0px 2px 8px 0px rgba(235, 183, 219, 0.2);
   padding-top: 40px;
   padding-bottom: 80px;
   margin-bottom: 32px;
